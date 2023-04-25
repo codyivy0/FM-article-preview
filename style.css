@@ -35,31 +35,35 @@ main {
     height: 20rem;
     width: 57rem;
     background-color: white;
-    
+
 }
 
 main #drawers {
     height: 100%;
-    width: 300px;  
+    width: 300px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-  
+
 }
 
 .text-column {
     display: flex;
     flex-direction: column;
-    
+
     padding-right: 48px;
     padding-left: 40px;
 }
-.text-column h1{
+
+.text-column h1 {
     font-weight: bold;
     font-size: 21px;
     margin-top: 0;
+    color: var(--very-dark-grayish-blue);
 }
-.text-column p{
+
+.text-column p {
     margin-top: 0;
+    color: var(--desaturated-dark-blue);
 }
 
 .contact {
@@ -85,16 +89,20 @@ main #drawers {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
-    
+
 }
-.name{
+
+#name {
     font-weight: 700;
     margin: 0;
+    color: var(--very-dark-grayish-blue);
 }
-.date{
+
+.date {
     margin: 0;
 }
-.share-button{
+
+.share-button {
     display: flex;
     background-color: var(--light-grayish-blue);
     height: 30px;
@@ -103,25 +111,32 @@ main #drawers {
     align-items: center;
     border-radius: 15px;
     position: relative;
+    z-index: 1;
 }
+
 #share {
     height: 1rem;
     width: 1rem;
+    z-index: 1;
 }
-.icon-active{
+
+.icon-active {
     filter: brightness(0%) invert(100%);
 
 }
-.share-button:hover{
+
+.share-button:hover {
     cursor: pointer;
 }
-.button-active{
+
+.button-active {
     background-color: var(--very-dark-grayish-blue);
     fill: white;
 }
-.alternate{
+
+.alternate {
     width: 175px;
-    position: absolute; 
+    position: absolute;
     padding: 10px;
     top: -4.5rem;
     background-color: var(--very-dark-grayish-blue);
@@ -132,20 +147,24 @@ main #drawers {
     justify-content: space-around;
     align-items: center;
 }
-.alternate p{
+
+.alternate p {
     color: var(--grayish-blue);
     text-align: center;
     margin: 0;
 }
-.social-icon{
+
+.social-icon {
     height: 15px;
     width: auto;
 }
-.social-icon:hover{
-    cursor: pointer;    
+
+.social-icon:hover {
+    cursor: pointer;
 }
-@media (max-width: 650px){
-    main{
+
+@media (max-width: 650px) {
+    main {
         height: auto;
         width: auto;
         display: flex;
@@ -153,36 +172,43 @@ main #drawers {
         margin: 25px;
         border-radius: 10px;
     }
+
     main #drawers {
         height: 200px;
         width: 100%;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 0px;
         border-top-right-radius: 10px;
-    
+
     }
-    .text-column{
+
+    .text-column {
         padding: 30px;
+        padding-bottom: 20px;
     }
-    .text-column h1{
+
+    .text-column h1 {
         font-weight: bold;
         font-size: 16px;
         margin-top: 10px;
     }
-    .text-column p{
-        margin-right: 40px;
+
+    .text-column p {
+        margin-right: 25px;
     }
-    .contact{
+
+    .contact {
         margin-top: 20px;
     }
-    .alternate{
-        width: 200px;
-        height: 60px;
-        position: absolute; 
-        padding: 10px;  
-        right: 70px;
-        top: -15px;
-        bottom: 15px;      
+
+    .alternate {
+        width: 325px;
+        height: 75px;
+        position: absolute;
+        padding: 10px;
+        right: -30px;
+        top: -20px;
+        bottom: 15px;
         background-color: var(--very-dark-grayish-blue);
         color: white;
         border-radius: 10px;
@@ -190,6 +216,19 @@ main #drawers {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        padding-right: 110px;
+        padding-left: 25px;
+        border-radius: 0 0 10px 10px;
+        gap: 10px;
+    }
+
+    .button-active {
+        background: var(--light-grayish-blue);
+        fill: white;
+    }
+
+    .social-icon {
+        margin-right: 10px;
     }
 
 }
